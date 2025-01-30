@@ -1,29 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/21 12:42:49 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/01/30 19:50:57 by glugo-mu         ###   ########.fr       */
+/*   Created: 2025/01/21 12:19:11 by glugo-mu          #+#    #+#             */
+/*   Updated: 2025/01/30 19:58:24 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "get_next_line.h"
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
-# endif
+size_t	ft_strlen(const char *c)
+{
+	size_t	len;
 
-# include <unistd.h>
-# include <fcntl.h>
-# include <stdlib.h>
-# include <stddef.h>
-# include <stdio.h>
+	len = 0;
+	while(c && c[len])
+	{
+		len++;
+	}
 
-size_t	ft_strlen(const char *c);
-char	*get_next_line(int fd);
+	return (len);
+}
 
-#endif
+char	*ft_strchr(const char *s, int c)
+{
+	if (!s)
+		return (NULL);
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	return (NULL);
+}
