@@ -2,16 +2,20 @@
 
 int main(void)
 {
-	// int fd = open("sample2.txt", O_RDONLY);
-	// char *new_line;
-	int i;
-	
+	int fd = open("sample.txt", O_RDONLY);
+	if (fd == -1)
+	{
+		perror("Error opening file");
+		return (1);
+	}
 
-	// while (get_next_line(fd))
-	// {
+	char *line;
+	while ((line = get_next_line(fd)) != NULL)
+	{
+		printf("%s", line);
+		free(line);
+	}
 
-	// }
-	char *c = "Hola";
-	i = ft_strlen(c);
-	printf("%d", i);
+	close(fd);
+	return (0);
 }

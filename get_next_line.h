@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:42:49 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/01/30 19:50:57 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/01/31 15:06:23 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # include <stdio.h>
 
 size_t	ft_strlen(const char *c);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*get_next_line(int fd);
 
 #endif
