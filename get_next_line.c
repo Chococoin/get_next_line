@@ -6,40 +6,60 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/01/31 18:24:40 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/03 14:34:30 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*get_next_line(int fd)
+void	get_line(int fd, char *line, char *buffer)
 {
-	static char	*warehouse;
-	char		buffer[BUFFER_SIZE + 1];
-	int 		bytesRead;
-	char		temp[2];
-	int 		i;
+	int	i;
+	int	byteslen;
 	
-	if (fd < 0 || BUFFER_SIZE <= 0)
-		return (NULL);
-	while ((bytesRead = read(fd, buffer, BUFFER_SIZE)) > 0)
+	while ((byteslen = read(fd, buffer, BUFFER_SIZE)) > 0)
 	{
+		line[byteslen] = '\0';
 		i = 0;
-		while(buffer[i])
+		if (buffer[0] != '\0')
 		{
-			if (buffer[i] != '\n')
+			while (buffer[i] != '\n' && buffer[i] != '\0')
 			{
-			    temp[0] = buffer[i]; // Asignar el carácter a la cadena temporal
-                temp[1] = '\0'; // Terminar la cadena con un carácter nulo
-				warehouse = ft_strjoin(warehouse, temp);
+				printf("Buffer: %c\n", buffer[i]);
+				line[i] = buffer[i];
+				i++;
 			}
-			else
-			{
-				warehouse = ft_strjoin(warehouse, "\n");
-				break;
-			}
-			i++;
+			if (buffer[i] == '\n')
+				break ;
 		}
 	}
-	return warehouse;
+}
+
+char	*get_next_line(int fd)
+{
+	// static char	warehouse;
+	char		buffer[BUFFER_SIZE + 1];
+	char		*line;
+
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
+	line = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
+		if (!line)
+			return (NULL);
+	get_line(fd, line, buffer);
+
+	printf("Buffer after while: /*%s*/\n", buffer);
+	
+	return (line);
+}
+
+int	main(void)
+{
+	int	fd;
+
+	fd = open("sample2.txt", O_RDONLY);
+	printf("From main 1: %s\n", get_next_line(fd));
+	printf("From main 2: %s\n", get_next_line(fd));
+	close(fd);
+	return (0);
 }
