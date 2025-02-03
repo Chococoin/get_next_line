@@ -6,23 +6,38 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/03 14:34:30 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/03 15:35:22 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	get_line(int fd, char *line, char *buffer)
+void	*reset_buffer(char *buffer, char *warehouse)
+{
+	int	i;
+
+	i = 0;
+	while (buffer[i] != '\0')
+	{
+		if (buffer[i] != '\n')
+			warehouse[i] = buffer[i];
+		i++;
+	}
+	warehouse[i] = '\0';
+}
+
+void	*get_line(int fd, char *line, char *buffer, char *warehouse)
 {
 	int	i;
 	int	byteslen;
-	
-	while ((byteslen = read(fd, buffer, BUFFER_SIZE)) > 0)
+
+	byteslen = read(fd, buffer, BUFFER_SIZE);
+	while (byteslen != 0)
 	{
-		line[byteslen] = '\0';
-		i = 0;
-		if (buffer[0] != '\0')
+		if (byteslen != 0)
 		{
+			line[byteslen] = '\0';
+			i = 0;
 			while (buffer[i] != '\n' && buffer[i] != '\0')
 			{
 				printf("Buffer: %c\n", buffer[i]);
@@ -32,12 +47,14 @@ void	get_line(int fd, char *line, char *buffer)
 			if (buffer[i] == '\n')
 				break ;
 		}
+		byteslen = read(fd, buffer, BUFFER_SIZE);
 	}
+	reset_buffer(buffer, warehouse);
 }
 
 char	*get_next_line(int fd)
 {
-	// static char	warehouse;
+	static char	*warehouse;
 	char		buffer[BUFFER_SIZE + 1];
 	char		*line;
 
@@ -46,10 +63,7 @@ char	*get_next_line(int fd)
 	line = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 		if (!line)
 			return (NULL);
-	get_line(fd, line, buffer);
-
-	printf("Buffer after while: /*%s*/\n", buffer);
-	
+	warehouse = get_line(fd, line, buffer, warehouse);
 	return (line);
 }
 
