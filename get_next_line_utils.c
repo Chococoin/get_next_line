@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:19:11 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/01/31 10:38:20 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/05 19:00:20 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ size_t	ft_strlen(const char *c)
 	{
 		len++;
 	}
-
 	return (len);
 }
 
@@ -38,14 +37,14 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char const *s2)
 {
-	int	len;
+	int		len;
 	char	*result;
 	int		i;
 	
-	if (!s1 || !s2)
-		return (NULL);
+	if (!s1)
+		s1 = malloc(sizeof(char) * 1);
 	len = ft_strlen(s1) + ft_strlen(s2);
 	result = (char *)malloc(sizeof(char) * (len + 1));
 	if (!result)
@@ -62,5 +61,53 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		s2++;
 	}
 	result[len] = '\0';
+	free(s1);
 	return (result);
+}
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
+
+	if (!dest && !src)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	if (d < s)
+	{
+		i = 0;
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	else
+	{
+		i = n;
+		while (i-- > 0)
+			d[i] = s[i];
+	}
+	return (dest);
+}
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	char		*d;
+	const char	*s;
+	size_t		i;
+
+	if (!dest && !src)
+		return (NULL);
+	s = (const char *)src;
+	d = (char *)dest;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
 }

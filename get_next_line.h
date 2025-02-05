@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:42:49 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/03 12:26:12 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/05 19:00:34 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,10 @@
 # include <stdio.h>
 
 size_t	ft_strlen(const char *c);
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char *s1, char const *s2);
+char	*ft_strchr(const char *s, int c);
 char	*get_next_line(int fd);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif
