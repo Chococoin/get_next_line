@@ -6,64 +6,65 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/03 15:35:22 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/05 18:01:09 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	*reset_buffer(char *buffer, char *warehouse)
+void	fill_line(char *buffer, char **line, char **store)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (buffer[i] != '\0')
+	while (buffer[i] && buffer[i] != '\n')
+		i++;
+	j = ft_strlen(buffer) - i - 1;
+	*line = malloc(sizeof(char) * (i + 2));
+	*store = malloc(sizeof(char) * (j + 1));
+	if (!*line || !*store)
+		return ;
+	(*store)[j] = '\0';
+	i = 0;
+	while (buffer[i] && buffer[i] != '\n')
 	{
-		if (buffer[i] != '\n')
-			warehouse[i] = buffer[i];
+		(*line)[i] = buffer[i];
 		i++;
 	}
-	warehouse[i] = '\0';
+	(*line)[i++] = '\n';
+	(*line)[i] = '\0';
+	while (buffer[j--])
+		(*store)[j] = buffer[j];
 }
 
-void	*get_line(int fd, char *line, char *buffer, char *warehouse)
+void	get_from_read(int fd, char **line, char **store)
 {
-	int	i;
-	int	byteslen;
+	int		byteslen;
+	char	buffer[BUFFER_SIZE + 1];
 
-	byteslen = read(fd, buffer, BUFFER_SIZE);
-	while (byteslen != 0)
+	buffer[0] = '\0';
+	while (!ft_strchr(buffer, '\n'))
 	{
-		if (byteslen != 0)
-		{
-			line[byteslen] = '\0';
-			i = 0;
-			while (buffer[i] != '\n' && buffer[i] != '\0')
-			{
-				printf("Buffer: %c\n", buffer[i]);
-				line[i] = buffer[i];
-				i++;
-			}
-			if (buffer[i] == '\n')
-				break ;
-		}
 		byteslen = read(fd, buffer, BUFFER_SIZE);
+		if (byteslen > 0 && ft_strchr(buffer, '\n'))
+		{
+			fill_line(buffer, line, store);
+		}
 	}
-	reset_buffer(buffer, warehouse);
+	return ;
 }
 
 char	*get_next_line(int fd)
 {
-	static char	*warehouse;
-	char		buffer[BUFFER_SIZE + 1];
+	static char	*store;
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
-		return (NULL);
-	line = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
-		if (!line)
-			return (NULL);
-	warehouse = get_line(fd, line, buffer, warehouse);
+	line = NULL;
+	if (!store)
+		get_from_read(fd, &line, &store);
+	else
+		get_from_store(store, line);
 	return (line);
 }
 
@@ -71,9 +72,10 @@ int	main(void)
 {
 	int	fd;
 
-	fd = open("sample2.txt", O_RDONLY);
-	printf("From main 1: %s\n", get_next_line(fd));
-	printf("From main 2: %s\n", get_next_line(fd));
+	fd = open("sample.txt", O_RDONLY);
+	printf("From main 1: %s", get_next_line(fd));
+	printf("From main 2: %s", get_next_line(fd));
+	printf("From main 3: %s", get_next_line(fd));
 	close(fd);
 	return (0);
 }
