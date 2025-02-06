@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:19:11 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/06 09:54:57 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/06 19:22:47 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,4 +110,18 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		i++;
 	}
 	return (dest);
+}
+
+char	*ft_strdup(const char *s1)
+{
+	char	*copy;
+	size_t	len;
+	
+	len = ft_strlen(s1);
+	copy = malloc(len + 1);
+	if (!copy)
+		return (NULL);
+	ft_memcpy(copy, s1, len);
+	copy[len] = '\0';
+	return (copy);
 }
