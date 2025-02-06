@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/06 00:25:09 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/06 16:43:03 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,20 @@ void	fill_line(char *buffer, char **line, char **store)
 	i = 0;
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
-	j = ft_strlen(buffer) - 1;
 	*line = malloc(sizeof(char) * (i + 2));
-	*store = malloc(sizeof(char) * (j + 1));
-	if (!*line || !*store)
-		return ;
-	(*store)[j] = '\0';
-	i = 0;
-	while (buffer[i] && buffer[i] != '\n')
-	{
-		(*line)[i] = buffer[i];
+	if (!*line)
+		return;
+	ft_memcpy(*line, buffer, i);
+	(*line)[i] = '\n';
+	(*line)[i + 1] = '\0';
+	if (buffer[i] == '\n')
 		i++;
-	}
-	(*line)[i++] = '\n';
-	(*line)[i] = '\0';
-	while (buffer[j--] && j > 0)
-		(*store)[j] = buffer[j + (i - 1)];
+	j = ft_strlen(buffer) - i;
+	*store = malloc(sizeof(char) * (j + 1));
+	if (!*store)
+		return;
+	ft_memcpy(*store, buffer + i, j);
+	(*store)[j] = '\0';
 }
 
 void	get_from_read(int fd, char **line, char **store)
