@@ -1,2 +1,4 @@
 *.a
-a.out
+*.out
+*.txt
+debbug.out.dSYM/
