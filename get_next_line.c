@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/07 17:54:39 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/07 18:11:46 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,17 @@ void	add_to_store(char **store, char *buffer, int buffer_len)
 
 void	fill_line(char *buffer, char **line, char **store)
 {
-	int	buffer_len;
-	int	store_len;
+	int i;
+	int store_len;
+	int buffer_len;
 
 	store_len = 0;
 	if (*store)
 		store_len = ft_strlen(*store);
-	buffer_len = ft_strlen(buffer);
-	*line = malloc(sizeof(char) * (store_len + buffer_len + 2));
+	i = 0;
+	while (buffer[i] && buffer[i] != '\n')
+		i++;
+	*line = malloc(sizeof(char) * (store_len + i + 2));
 	if (!*line)
 		return ;
 	if (*store)
@@ -41,13 +44,15 @@ void	fill_line(char *buffer, char **line, char **store)
 		ft_memcpy(*line, *store, store_len);
 		free(*store);
 	}
-	ft_memcpy(*line + store_len, buffer, buffer_len); // Must copy until first '\n'
-	(*line)[store_len + buffer_len] = '\n';
-	(*line)[store_len + buffer_len + 1] = '\0';
-	if (buffer[buffer_len] == '\n')
-		buffer_len++;
-	add_to_store(store, buffer, buffer_len);
+	ft_memcpy(*line + store_len, buffer, i);
+	(*line)[store_len + i] = '\n';
+	(*line)[store_len + i + 1] = '\0';
+	buffer_len = ft_strlen(buffer) - i;
+	if (buffer[i] == '\n')
+		i++;
+	add_to_store(store, buffer + i, buffer_len);
 }
+
 
 
 void	get_from_read(int fd, char **line, char **store)
