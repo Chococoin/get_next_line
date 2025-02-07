@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/06 19:21:17 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/07 09:46:00 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	fill_line(char *buffer, char **line, char **store)
 		i++;
 	*line = malloc(sizeof(char) * (i + 2));
 	if (!*line)
-		return;
+		return ;
 	ft_memcpy(*line, buffer, i);
 	(*line)[i] = '\n';
 	(*line)[i + 1] = '\0';
@@ -32,7 +32,7 @@ void	fill_line(char *buffer, char **line, char **store)
 	j = ft_strlen(buffer) - i;
 	*store = malloc(sizeof(char) * (j + 1));
 	if (!*store)
-		return;
+		return ;
 	ft_memcpy(*store, buffer + i, j);
 	(*store)[j] = '\0';
 }
@@ -43,12 +43,19 @@ void	get_from_read(int fd, char **line, char **store)
 	char	buffer[BUFFER_SIZE + 1];
 
 	buffer[0] = '\0';
+	if (ft_strlen(*store))
+	{
+		
+		printf("%s", "here!");
+		return ;
+	}
 	while (!ft_strchr(buffer, '\n'))
 	{
 		byteslen = read(fd, buffer, BUFFER_SIZE);
 		if (byteslen > 0 && ft_strchr(buffer, '\n'))
 		{
 			fill_line(buffer, line, store);
+			return ;
 		}
 	}
 	return ;
@@ -56,7 +63,7 @@ void	get_from_read(int fd, char **line, char **store)
 
 void	get_from_store(char **store, char **line)
 {
-	char 	*ptr;
+	char	*ptr;
 	int		len;
 
 	ptr = ft_strchr(*store, '\n');
@@ -80,8 +87,10 @@ char	*get_next_line(int fd)
 	static char	*store;
 	char		*line;
 
+	if (fd < 0)
+		return (NULL);
 	line = NULL;
-	if (!store)
+	if (!store || !ft_strchr(store, '\n'))
 		get_from_read(fd, &line, &store);
 	else
 		get_from_store(&store, &line);
@@ -90,12 +99,14 @@ char	*get_next_line(int fd)
 
 int	main(void)
 {
-	int	fd;
+	int		fd;
+	char	*line;
 
 	fd = open("sample.txt", O_RDONLY);
-	printf("From main 1: %s", get_next_line(fd));
-	printf("From main 2: %s", get_next_line(fd));
-	printf("From main 3: %s", get_next_line(fd));
+	while ((line = get_next_line(fd)) != NULL)
+	{
+		printf("%s", line);
+	}
 	close(fd);
 	return (0);
 }
