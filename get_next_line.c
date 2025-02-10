@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/07 18:11:46 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/10 17:55:05 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,34 +26,31 @@ void	add_to_store(char **store, char *buffer, int buffer_len)
 
 void	fill_line(char *buffer, char **line, char **store)
 {
-	int i;
 	int store_len;
 	int buffer_len;
 
 	store_len = 0;
 	if (*store)
 		store_len = ft_strlen(*store);
-	i = 0;
-	while (buffer[i] && buffer[i] != '\n')
-		i++;
-	*line = malloc(sizeof(char) * (store_len + i + 2));
+	buffer_len = 0;
+	while (buffer[buffer_len] && buffer[buffer_len] != '\n')
+		buffer_len++;
+	*line = malloc(sizeof(char) * (store_len + buffer_len + 2));
 	if (!*line)
 		return ;
 	if (*store)
 	{
 		ft_memcpy(*line, *store, store_len);
 		free(*store);
+		*store = NULL;
 	}
-	ft_memcpy(*line + store_len, buffer, i);
-	(*line)[store_len + i] = '\n';
-	(*line)[store_len + i + 1] = '\0';
-	buffer_len = ft_strlen(buffer) - i;
-	if (buffer[i] == '\n')
-		i++;
-	add_to_store(store, buffer + i, buffer_len);
+	ft_memcpy(*line + store_len, buffer, buffer_len);
+	(*line)[store_len + buffer_len] = '\n';
+	(*line)[store_len + buffer_len + 1] = '\0';
+	if (buffer[buffer_len + 1] == '\n')
+		buffer_len++;
+	add_to_store(store, buffer, buffer_len);
 }
-
-
 
 void	get_from_read(int fd, char **line, char **store)
 {
@@ -61,13 +58,13 @@ void	get_from_read(int fd, char **line, char **store)
 	char	buffer[BUFFER_SIZE + 1];
 
 	buffer[0] = '\0';
-	while (!ft_strchr(buffer, '\n'))
+	while (!ft_strchr(buffer, '\n') && !ft_strchr(*line, '\n'))
 	{
-		if ((ft_strlen(buffer) > 0) && !ft_strchr(buffer, '\n'))
-			add_to_store(store, buffer, BUFFER_SIZE);
 		byteslen = read(fd, buffer, BUFFER_SIZE);
-		if (byteslen > 0 && ft_strchr(buffer, '\n'))
+		if (ft_strchr(*store, '\n') || (byteslen > 0 && ft_strchr(buffer, '\n')))
 			fill_line(buffer, line, store);
+		else if (byteslen > 0 && !ft_strchr(buffer, '\n'))
+			add_to_store(store, buffer, byteslen);
 	}
 	return ;
 }
@@ -114,8 +111,9 @@ int	main(void)
 	char	*line;
 
 	fd = open("sample.txt", O_RDONLY);
-	while ((line = get_next_line(fd)) != NULL)
+	while (fd >= 0)
 	{
+		line = get_next_line(fd);
 		printf("%s", line);
 	}
 	close(fd);
