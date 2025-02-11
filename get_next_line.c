@@ -6,53 +6,43 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/11 07:31:19 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/11 10:11:16 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	add_to_store(char **store, char *buffer)
+void	add_to_store(char **store, char *buffer, int start)
 {
-	int buff_len;
+	int		buff_len;
+	int		store_len;
+	char	*new_store;
 
-	buff_len = ft_strlen(buffer);
-	printf("Buffer: %s\n***\n", buffer);
+	buff_len = ft_strlen(buffer + start);
+	store_len = 0;
+	if (*store)
+		store_len = ft_strlen(*store);
 	if (buff_len > 0)
 	{
-		*store = malloc(sizeof(char) * (buff_len + 1));
-		if (!*store)
+		new_store = malloc(sizeof(char) * (store_len + buff_len + 1));
+		if (!new_store)
 			return ;
-		ft_memcpy(*store, buffer, buff_len);
-		(*store)[buff_len] = '\0';
-		printf("Store: %s\n***\n", *store);
-	}
-}
-
-void	add_to_store2(char **store, char *buffer, int buffer_len)
-{
-	char *pos;
-
-	pos = strchr(buffer, '\n');
-	if (pos && *(pos + 1))
-	{
-		pos++;
-		int new_len = buffer_len - (pos - buffer);
-		if (new_len > 0)
+		if (*store)
 		{
-			*store = malloc(sizeof(char) * (new_len + 1));
-			if (!*store)
-				return;
-			memcpy(*store, pos, new_len);
-			(*store)[new_len] = '\0';
+			ft_memcpy(new_store, *store, store_len);
+			free(*store);
 		}
+		ft_memcpy(new_store + store_len, buffer + start, buff_len);
+		new_store[store_len + buff_len] = '\0';
+		*store = new_store;
 	}
 }
 
 void	fill_line(char *buffer, char **line, char **store)
 {
-	int store_len;
-	int buffer_len;
+	int		store_len;
+	int		buffer_len;
+	char	*new_line;
 
 	store_len = 0;
 	if (*store)
@@ -60,38 +50,20 @@ void	fill_line(char *buffer, char **line, char **store)
 	buffer_len = 0;
 	while (buffer[buffer_len] && buffer[buffer_len] != '\n')
 		buffer_len++;
-	*line = malloc(sizeof(char) * (store_len + buffer_len + 2));
-	if (!*line)
+	new_line = malloc(sizeof(char) * (store_len + buffer_len + 2));
+	if (!new_line)
 		return ;
+	ft_memcpy(new_line, *store, store_len);
+	ft_memcpy(new_line + store_len, buffer, buffer_len);
 	if (*store)
-	{
-		ft_memcpy(*line, *store, store_len);
 		free(*store);
-		*store = NULL;
-	}
-	ft_memcpy(*line + store_len, buffer, buffer_len);
-	(*line)[store_len + buffer_len] = '\n';
-	(*line)[store_len + buffer_len + 1] = '\0';
-	if (buffer[buffer_len + 1] == '\n')
-		buffer_len++;
-	add_to_store(store, buffer); 
-}
-
-void	get_from_read(int fd, char **line, char **store)
-{
-	int		byteslen;
-	char	buffer[BUFFER_SIZE + 1];
-
-	buffer[0] = '\0';
-	while (!ft_strchr(buffer, '\n') && !ft_strchr(*line, '\n'))
-	{
-		byteslen = read(fd, buffer, BUFFER_SIZE);
-		if (ft_strchr(*store, '\n') || (byteslen > 0 && ft_strchr(buffer, '\n')))
-			fill_line(buffer, line, store);
-		else if (byteslen > 0 && !ft_strchr(buffer, '\n'))
-			add_to_store(store, buffer);
-	}
-	return ;
+	*store = NULL;
+	if (buffer[buffer_len] == '\n')
+		new_line[store_len + buffer_len++] = '\n';
+	new_line[store_len + buffer_len] = '\0';
+	*line = new_line;
+	if (buffer[buffer_len])
+		add_to_store(store, buffer + buffer_len, 0);
 }
 
 void	get_from_store(char **store, char **line)
@@ -115,31 +87,68 @@ void	get_from_store(char **store, char **line)
 	return ;
 }
 
+void	get_from_read(int fd, char **line, char **store)
+{
+	int		byteslen;
+	char	buffer[BUFFER_SIZE + 1];
+
+	buffer[0] = '\0';
+	while (!ft_strchr(buffer, '\n') && (!*store || !ft_strchr(*store, '\n')))
+	{
+		byteslen = read(fd, buffer, BUFFER_SIZE);
+		if (byteslen <= 0)
+		{
+			if (*store && **store)
+			{
+				*line = ft_strdup(*store);
+				free(*store);
+				*store = NULL;
+			}
+			return ;
+		}
+		buffer[byteslen] = '\0';
+		add_to_store(store, buffer, 0);
+	}
+	if (ft_strchr(*store, '\n'))
+		get_from_store(store, line);
+}
+
 char	*get_next_line(int fd)
 {
 	static char	*store;
 	char		*line;
 
+	line = NULL;
 	if (fd < 0)
 		return (NULL);
-	line = NULL;
 	if (!store || !ft_strchr(store, '\n'))
 		get_from_read(fd, &line, &store);
 	else
 		get_from_store(&store, &line);
-	return (line);
+	if (line)
+		return (line);
+	if (store && *store)
+	{
+		line = ft_strdup(store);
+		free(store);
+		store = NULL;
+		return (line);
+	}
+	return (NULL);
 }
 
-int	main(void)
+int main(void)
 {
 	int		fd;
 	char	*line;
 
 	fd = open("sample.txt", O_RDONLY);
-	while (fd >= 0)
+	if (fd < 0)
+		return (1);
+	while ((line = get_next_line(fd)) != NULL)
 	{
-		line = get_next_line(fd);
-		printf("Line: %s", line);
+		printf("%s", line);
+		free(line);
 	}
 	close(fd);
 	return (0);
