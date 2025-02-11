@@ -6,21 +6,46 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/10 17:55:05 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/11 07:31:19 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	add_to_store(char **store, char *buffer, int buffer_len)
+void	add_to_store(char **store, char *buffer)
 {
-	if (buffer_len > 0)
+	int buff_len;
+
+	buff_len = ft_strlen(buffer);
+	printf("Buffer: %s\n***\n", buffer);
+	if (buff_len > 0)
 	{
-		*store = malloc(sizeof(char) * (buffer_len + 1));
+		*store = malloc(sizeof(char) * (buff_len + 1));
 		if (!*store)
 			return ;
-		ft_memcpy(*store, buffer, buffer_len);
-		(*store)[buffer_len] = '\0';
+		ft_memcpy(*store, buffer, buff_len);
+		(*store)[buff_len] = '\0';
+		printf("Store: %s\n***\n", *store);
+	}
+}
+
+void	add_to_store2(char **store, char *buffer, int buffer_len)
+{
+	char *pos;
+
+	pos = strchr(buffer, '\n');
+	if (pos && *(pos + 1))
+	{
+		pos++;
+		int new_len = buffer_len - (pos - buffer);
+		if (new_len > 0)
+		{
+			*store = malloc(sizeof(char) * (new_len + 1));
+			if (!*store)
+				return;
+			memcpy(*store, pos, new_len);
+			(*store)[new_len] = '\0';
+		}
 	}
 }
 
@@ -49,7 +74,7 @@ void	fill_line(char *buffer, char **line, char **store)
 	(*line)[store_len + buffer_len + 1] = '\0';
 	if (buffer[buffer_len + 1] == '\n')
 		buffer_len++;
-	add_to_store(store, buffer, buffer_len);
+	add_to_store(store, buffer); 
 }
 
 void	get_from_read(int fd, char **line, char **store)
@@ -64,7 +89,7 @@ void	get_from_read(int fd, char **line, char **store)
 		if (ft_strchr(*store, '\n') || (byteslen > 0 && ft_strchr(buffer, '\n')))
 			fill_line(buffer, line, store);
 		else if (byteslen > 0 && !ft_strchr(buffer, '\n'))
-			add_to_store(store, buffer, byteslen);
+			add_to_store(store, buffer);
 	}
 	return ;
 }
@@ -114,7 +139,7 @@ int	main(void)
 	while (fd >= 0)
 	{
 		line = get_next_line(fd);
-		printf("%s", line);
+		printf("Line: %s", line);
 	}
 	close(fd);
 	return (0);
