@@ -1,38 +1,51 @@
-abcdefghijklmn
-abcdefghijklmno
-abcdefghijklmnop
-abcdefghijklmnopq
-abcdefghijklmnopqr
-abcdefghijklmnopqrs
-abcdefghijklmnopqrst
-abcdefghijklmnopqrstu
-abcdefghijklmnopqrstuv
-abcdefghijklmnopqrstuvw
-abcdefghijklmnopqrstuvwx
-abcdefghijklmnopqrstuvwxy
-abcdefghijklmnopqrstuvwxyz
-abcdefghijklmnopqrstuvwxy
-abcdefghijklmnopqrstuvwx
-abcdefghijklmnopqrstuvw
-abcdefghijklmnopqrstuv
-abcdefghijklmnopqrstu
-abcdefghijklmnopqrst
-abcdefghijklmnopqrs
-abcdefghijklmnopqr
-abcdefghijklmnopq
-abcdefghijklmnop
-abcdefghijklmno
-abcdefghijklmn
-abcdefghijklm
-abcdefghijkl
-abcdefghijk
-abcdefghij
-abcdefghi
-abcdefgh
-abcdefg
-abcdef
-abcde
-abcd
-abc
-ab
-a
+a                                                   a a
+ab                                                 ba ab
+abc                                               cba abc
+abcd                                             dcba abcd
+abcde                                           edcba abcde
+abcdef                                         fedcba abcdef
+abcdefg                                       gfedcba abcdefg
+abcdefgh                                     hgfedcba abcdefgh
+abcdefghi                                   ihgfedcba abcdefghi
+abcdefghij                                 jihgfedcba abcdefghij
+abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghij                                 jihgfedcba abcdefghij
+abcdefghi                                   ihgfedcba abcdefghi
+abcdefgh                                     hgfedcba abcdefgh
+abcdefg                                       gfedcba abcdefg
+abcdef                                         fedcba abcdef
+abcde                                           edcba abcde
+abcd                                             dcba abcd
+abc                                               cba abc
+ab                                                 ba ab
+a                                                   a a

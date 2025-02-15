@@ -6,11 +6,27 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/11 10:11:16 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/15 12:35:32 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+# ifdef DEBUG_MEMORY
+
+void *debug_malloc(size_t size, const char *file, int line)
+{
+    void *ptr = __builtin_malloc(size);
+    printf("[MALLOC] %p (%zu bytes) at %s:%d\n", ptr, size, file, line);
+    return ptr;
+}
+
+void debug_free(void *ptr, const char *file, int line)
+{
+    printf("[FREE] %p at %s:%d\n", ptr, file, line);
+    __builtin_free(ptr);
+}
+# endif
 
 void	add_to_store(char **store, char *buffer, int start)
 {
@@ -127,13 +143,6 @@ char	*get_next_line(int fd)
 		get_from_store(&store, &line);
 	if (line)
 		return (line);
-	if (store && *store)
-	{
-		line = ft_strdup(store);
-		free(store);
-		store = NULL;
-		return (line);
-	}
 	return (NULL);
 }
 
@@ -148,7 +157,7 @@ int main(void)
 	while ((line = get_next_line(fd)) != NULL)
 	{
 		printf("%s", line);
-		free(line);
+		// free(line);
 	}
 	close(fd);
 	return (0);
