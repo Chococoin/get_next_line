@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:19:11 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/15 10:16:51 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/16 13:14:31 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,14 +59,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 char *ft_strdup(const char *s)
 {
     char *dup;
-    size_t len = ft_strlen(s);
+    size_t len = ft_strlen(s) + 1;
 
-    dup = malloc(len + 1);
+    dup = malloc(len);
     if (!dup)
         return (NULL);
-
     ft_memcpy(dup, s, len);
-    dup[len] = '\0';
     return (dup);
 }
 
