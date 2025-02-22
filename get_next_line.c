@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/22 12:54:16 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/22 15:41:20 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ void	get_from_store(char **store, char **line)
 		free(*store);
 		*store = ptr;
 	}
-	return ;
 }
 
 void	get_from_read(int fd, char **line, char **store)
@@ -101,14 +100,6 @@ void	get_from_read(int fd, char **line, char **store)
 	}
 	if (*store && ft_strchr(*store, '\n'))
 		get_from_store(store, line);
-	// else if (*store)
-	// {
-	// 	*line = ft_strdup(*store);
-	// 	if (!line)
-	// 		return ;
-	// 	free(*store);
-	// 	*store = NULL;
-	// }
 }
 
 char	*get_next_line(int fd)
@@ -123,11 +114,6 @@ char	*get_next_line(int fd)
 		get_from_read(fd, &line, &store);
 	else
 		get_from_store(&store, &line);
-	if (!line && store)
-	{
-		free(store);
-		store = NULL;
-	}
 	return (line);
 }
 
