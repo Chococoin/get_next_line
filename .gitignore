@@ -2,3 +2,4 @@
 *.out
 *.txt
 debbug.out.dSYM/
+.vscode

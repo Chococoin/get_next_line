@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:19:11 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/16 13:14:31 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/22 07:13:01 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-    char *dup;
-    size_t len = ft_strlen(s) + 1;
+	char	*dup;
+	size_t	len;	
 
-    dup = malloc(len);
-    if (!dup)
-        return (NULL);
-    ft_memcpy(dup, s, len);
-    return (dup);
+	len = ft_strlen(s) + 1;
+	dup = malloc(len);
+	if (!dup)
+		return (NULL);
+	ft_memcpy(dup, s, len);
+	return (dup);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -73,7 +74,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	len1;
 	size_t	len2;
 	char	*result;
-	size_t	i, j;
 
 	if (!s1 && !s2)
 		return (NULL);
@@ -86,18 +86,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result = (char *)malloc(len1 + len2 + 1);
 	if (!result)
 		return (NULL);
-	i = 0;
-	while (i < len1)
-	{
-		result[i] = s1[i];
-		i++;
-	}
-	j = 0;
-	while (j < len2)
-	{
-		result[i + j] = s2[j];
-		j++;
-	}
-	result[i + j] = '\0';
+	ft_memcpy(result, s1, len1);
+	ft_memcpy(result + len1, s2, len2);
+	result[len1 + len2] = '\0';
 	return (result);
 }
