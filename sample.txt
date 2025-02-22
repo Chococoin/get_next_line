@@ -1,3 +1,230 @@
+a
+ab
+abc
+abcde
+abcdef
+abcdefg
+abcdefgh
+abcdefghi
+abcdefghij
+abcdefghijk
+abcdefghijkl
+abcdefghijklm
+abcdefghijklmn
+abcdefghijklmno
+abcdefghijklmnop
+abcdefghijklmnopq
+abcdefghijklmnopqr
+abcdefghijklmnopqrs
+abcdefghijklmnopqrst
+abcdefghijklmnopqrstu
+abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu
+abcdefghijklmnopqrst
+abcdefghijklmnopqrs
+abcdefghijklmnopqr
+abcdefghijklmnopq
+abcdefghijklmnop
+abcdefghijklmno
+abcdefghijklmn
+abcdefghijklm
+abcdefghijkl
+abcdefghijk
+abcdefghij
+abcdefghi
+abcdefgh
+abcdefg
+abcdef
+abcde
+abcd
+abc
+ab
+a                                                   a a a                                                   a a a                                                   a a a                                                   a a a                                                   a a
+ab                                                 ba ab ab                                                 ba ab ab                                                 ba ab ab                                                 ba ab ab                                                 ba ab
+abc                                               cba abc abc                                               cba abc abc                                               cba abc abc                                               cba abc abc                                               cba abc
+abcd                                             dcba abcd abcd                                             dcba abcd abcd                                             dcba abcd abcd                                             dcba abcd abcd                                             dcba abcd
+abcde                                           edcba abcde abcde                                           edcba abcde abcde                                           edcba abcde abcde                                           edcba abcde abcde                                           edcba abcde
+abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef
+abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg
+abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh
+abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi
+abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij
+abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy            yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy            yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij
+abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi
+abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh
+abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg
+abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef
+abcde                                           edcba abcde abcde                                           edcba abcde abcde                                           edcba abcde abcde                                           edcba abcde abcde                                           edcba abcde
+abcd                                             dcba abcd abcd                                             dcba abcd abcd                                             dcba abcd abcd                                             dcba abcd abcd                                             dcba abcd
+abc                                               cba abc abc                                               cba abc abc                                               cba abc abc                                               cba abc abc                                               cba abc
+ab                                                 ba ab ab                                                 ba ab ab                                                 ba ab ab                                                 ba ab ab                                                 ba ab
+a                                                   a a a                                                   a a a                                                   a a a                                                   a a a                                                   a a
+						 a                          aabcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz
+						ba                         baabcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy
+					   cba                        cbaabcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+					  dcba                       dcbaabcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+					 edcba                      edcbaabcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+					fedcba                     fedcbaabcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+				   gfedcba                    gfedcbaabcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+				  hgfedcba                   hgfedcbaabcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+				 ihgfedcba                  ihgfedcbaabcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+				jihgfedcba                 jihgfedcbaabcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+			   kjihgfedcba                kjihgfedcbaabcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+			  lkjihgfedcba               lkjihgfedcbaabcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+			 mlkjihgfedcba              mlkjihgfedcbaabcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+			nmlkjihgfedcba             nmlkjihgfedcbaabcdefghijklm                           mlkjihgfedcba abcdefghijklm
+		   onmlkjihgfedcba            onmlkjihgfedcbaabcdefghijkl                             lkjihgfedcba abcdefghijkl
+		  ponmlkjihgfedcba           ponmlkjihgfedcbaabcdefghijk                               kjihgfedcba abcdefghijk
+		 qponmlkjihgfedcba          qponmlkjihgfedcbaabcdefghij                                 jihgfedcba abcdefghij
+		rqponmlkjihgfedcba         rqponmlkjihgfedcbaabcdefghi                                   ihgfedcba abcdefghi
+	   srqponmlkjihgfedcba        srqponmlkjihgfedcbaabcdefgh                                     hgfedcba abcdefgh
+	  tsrqponmlkjihgfedcba       tsrqponmlkjihgfedcbaabcdefg                                       gfedcba abcdefg
+	 utsrqponmlkjihgfedcba      utsrqponmlkjihgfedcbaabcdef                                         fedcba abcdef
+	vutsrqponmlkjihgfedcba     vutsrqponmlkjihgfedcbaabcde                                           edcba abcde
+   wvutsrqponmlkjihgfedcba    wvutsrqponmlkjihgfedcbaabcd                                             dcba abcd
+  xwvutsrqponmlkjihgfedcba   xwvutsrqponmlkjihgfedcbaabc                                               cba abc
+ yxwvutsrqponmlkjihgfedcba  yxwvutsrqponmlkjihgfedcbaab                                                 ba ab
+zyxwvutsrqponmlkjihgfedcba zyxwvutsrqponmlkjihgfedcbaa                                                   a a
+ yxwvutsrqponmlkjihgfedcba  yxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz
+  xwvutsrqponmlkjihgfedcba   xwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy
+   wvutsrqponmlkjihgfedcba    wvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+	vutsrqponmlkjihgfedcba     vutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+	 utsrqponmlkjihgfedcba      utsrqponmlkjihgfedcbaabcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+	  tsrqponmlkjihgfedcba       tsrqponmlkjihgfedcbaabcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+	   srqponmlkjihgfedcba        srqponmlkjihgfedcbaabcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+		rqponmlkjihgfedcba         rqponmlkjihgfedcbaabcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+		 qponmlkjihgfedcba          qponmlkjihgfedcbaabcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+		  ponmlkjihgfedcba           ponmlkjihgfedcbaabcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+		   onmlkjihgfedcba            onmlkjihgfedcbaabcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+			nmlkjihgfedcba             nmlkjihgfedcbaabcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+			 mlkjihgfedcba              mlkjihgfedcbaabcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+			  lkjihgfedcba               lkjihgfedcbaabcdefghijklm                           mlkjihgfedcba abcdefghijklm
+			   kjihgfedcba                kjihgfedcbaabcdefghijkl                             lkjihgfedcba abcdefghijkl
+				jihgfedcba                 jihgfedcbaabcdefghijk                               kjihgfedcba abcdefghijk
+				 ihgfedcba                  ihgfedcbaabcdefghij                                 jihgfedcba abcdefghij
+				  hgfedcba                   hgfedcbaabcdefghi                                   ihgfedcba abcdefghi
+				   gfedcba                    gfedcbaabcdefgh                                     hgfedcba abcdefgh
+					fedcba                     fedcbaabcdefg                                       gfedcba abcdefg
+					 edcba                      edcbaabcdef                                         fedcba abcdef
+					  dcba                       dcbaabcde                                           edcba abcde
+					   cba                        cbaabcd                                             dcba abcd
+						ba                         baabc                                               cba abc
+						 a                          aab                                                 ba ab
+abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz                                                
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy 
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijkl                             lkjihgfedcba abcdefghijkl abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijk                               kjihgfedcba abcdefghijk abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghij                                 jihgfedcba abcdefghij abcdefghij                                 jihgfedcba abcdefghij
+abcdefghi                                   ihgfedcba abcdefghi abcdefghi                                   ihgfedcba abcdefghi
+abcdefgh                                     hgfedcba abcdefgh abcdefgh                                     hgfedcba abcdefgh
+abcdefg                                       gfedcba abcdefg abcdefg                                       gfedcba abcdefg
+abcdef                                         fedcba abcdef abcdef                                         fedcba abcdef
+abcde                                           edcba abcde abcde                                           edcba abcde
+abcd                                             dcba abcd abcd                                             dcba abcd
+abc                                               cba abc abc                                               cba abc
+ab                                                 ba ab ab                                                 ba ab
+a                                                   a a a                                                   a a
+a
+ab
+abc
+abcde
+abcdef
+abcdefg
+abcdefgh
+abcdefghi
+abcdefghij
+abcdefghijk
+abcdefghijkl
+abcdefghijklm
+abcdefghijklmn
+abcdefghijklmno
+abcdefghijklmnop
+abcdefghijklmnopq
+abcdefghijklmnopqr
+abcdefghijklmnopqrs
+abcdefghijklmnopqrst
+abcdefghijklmnopqrstu
+abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu
+abcdefghijklmnopqrst
+abcdefghijklmnopqrs
+abcdefghijklmnopqr
+abcdefghijklmnopq
+abcdefghijklmnop
+abcdefghijklmno
+abcdefghijklmn
+abcdefghijklm
+abcdefghijkl
+abcdefghijk
+abcdefghij
+abcdefghi
+abcdefgh
+abcdefg
+abcdef
+abcde
+abcd
+abc
+ab
+a
 a                                                   a a
 ab                                                 ba ab
 abc                                               cba abc
@@ -49,3 +276,199 @@ abcd                                             dcba abcd
 abc                                               cba abc
 ab                                                 ba ab
 a                                                   a a
+						 a                          a
+						ba                         ba
+					   cba                        cba
+					  dcba                       dcba
+					 edcba                      edcba
+					fedcba                     fedcba
+				   gfedcba                    gfedcba
+				  hgfedcba                   hgfedcba
+				 ihgfedcba                  ihgfedcba
+				jihgfedcba                 jihgfedcba
+			   kjihgfedcba                kjihgfedcba
+			  lkjihgfedcba               lkjihgfedcba
+			 mlkjihgfedcba              mlkjihgfedcba
+			nmlkjihgfedcba             nmlkjihgfedcba
+		   onmlkjihgfedcba            onmlkjihgfedcba
+		  ponmlkjihgfedcba           ponmlkjihgfedcba
+		 qponmlkjihgfedcba          qponmlkjihgfedcba
+		rqponmlkjihgfedcba         rqponmlkjihgfedcba
+	   srqponmlkjihgfedcba        srqponmlkjihgfedcba
+	  tsrqponmlkjihgfedcba       tsrqponmlkjihgfedcba
+	 utsrqponmlkjihgfedcba      utsrqponmlkjihgfedcba
+	vutsrqponmlkjihgfedcba     vutsrqponmlkjihgfedcba
+   wvutsrqponmlkjihgfedcba    wvutsrqponmlkjihgfedcba
+  xwvutsrqponmlkjihgfedcba   xwvutsrqponmlkjihgfedcba
+ yxwvutsrqponmlkjihgfedcba  yxwvutsrqponmlkjihgfedcba
+zyxwvutsrqponmlkjihgfedcba zyxwvutsrqponmlkjihgfedcba
+ yxwvutsrqponmlkjihgfedcba  yxwvutsrqponmlkjihgfedcba
+  xwvutsrqponmlkjihgfedcba   xwvutsrqponmlkjihgfedcba
+   wvutsrqponmlkjihgfedcba    wvutsrqponmlkjihgfedcba
+	vutsrqponmlkjihgfedcba     vutsrqponmlkjihgfedcba
+	 utsrqponmlkjihgfedcba      utsrqponmlkjihgfedcba
+	  tsrqponmlkjihgfedcba       tsrqponmlkjihgfedcba
+	   srqponmlkjihgfedcba        srqponmlkjihgfedcba
+		rqponmlkjihgfedcba         rqponmlkjihgfedcba
+		 qponmlkjihgfedcba          qponmlkjihgfedcba
+		  ponmlkjihgfedcba           ponmlkjihgfedcba
+		   onmlkjihgfedcba            onmlkjihgfedcba
+			nmlkjihgfedcba             nmlkjihgfedcba
+			 mlkjihgfedcba              mlkjihgfedcba
+			  lkjihgfedcba               lkjihgfedcba
+			   kjihgfedcba                kjihgfedcba
+				jihgfedcba                 jihgfedcba
+				 ihgfedcba                  ihgfedcba
+				  hgfedcba                   hgfedcba
+				   gfedcba                    gfedcba
+					fedcba                     fedcba
+					 edcba                      edcba
+					  dcba                       dcba
+					   cba                        cba
+						ba                         ba
+a                                                   a a
+ab                                                 ba ab
+abc                                               cba abc
+abcd                                             dcba abcd
+abcde                                           edcba abcde
+abcdef                                         fedcba abcdef
+abcdefg                                       gfedcba abcdefg
+abcdefgh                                     hgfedcba abcdefgh
+abcdefghi                                   ihgfedcba abcdefghi
+abcdefghij                                 jihgfedcba abcdefghij
+abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwxyz zyxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxy   yxwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwxy
+abcdefghijklmnopqrstuvwx     xwvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvwx
+abcdefghijklmnopqrstuvw       wvutsrqponmlkjihgfedcba abcdefghijklmnopqrstuvw
+abcdefghijklmnopqrstuv         vutsrqponmlkjihgfedcba abcdefghijklmnopqrstuv
+abcdefghijklmnopqrstu           utsrqponmlkjihgfedcba abcdefghijklmnopqrstu
+abcdefghijklmnopqrst             tsrqponmlkjihgfedcba abcdefghijklmnopqrst
+abcdefghijklmnopqrs               srqponmlkjihgfedcba abcdefghijklmnopqrs
+abcdefghijklmnopqr                 rqponmlkjihgfedcba abcdefghijklmnopqr
+abcdefghijklmnopq                   qponmlkjihgfedcba abcdefghijklmnopq
+abcdefghijklmnop                     ponmlkjihgfedcba abcdefghijklmnop
+abcdefghijklmno                       onmlkjihgfedcba abcdefghijklmno
+abcdefghijklmn                         nmlkjihgfedcba abcdefghijklmn
+abcdefghijklm                           mlkjihgfedcba abcdefghijklm
+abcdefghijkl                             lkjihgfedcba abcdefghijkl
+abcdefghijk                               kjihgfedcba abcdefghijk
+abcdefghij                                 jihgfedcba abcdefghij
+abcdefghi                                   ihgfedcba abcdefghi
+abcdefgh                                     hgfedcba abcdefgh
+abcdefg                                       gfedcba abcdefg
+abcdef                                         fedcba abcdef
+abcde                                           edcba abcde
+abcd                                             dcba abcd
+abc                                               cba abc
+ab                                                 ba ab
+a                                                   a a
+						 a                          a
+						ba                         ba
+					   cba                        cba
+					  dcba                       dcba
+					 edcba                      edcba
+					fedcba                     fedcba
+				   gfedcba                    gfedcba
+				  hgfedcba                   hgfedcba
+				 ihgfedcba                  ihgfedcba
+				jihgfedcba                 jihgfedcba
+			   kjihgfedcba                kjihgfedcba
+			  lkjihgfedcba               lkjihgfedcba
+			 mlkjihgfedcba              mlkjihgfedcba
+			nmlkjihgfedcba             nmlkjihgfedcba
+		   onmlkjihgfedcba            onmlkjihgfedcba
+		  ponmlkjihgfedcba           ponmlkjihgfedcba
+		 qponmlkjihgfedcba          qponmlkjihgfedcba
+		rqponmlkjihgfedcba         rqponmlkjihgfedcba
+	   srqponmlkjihgfedcba        srqponmlkjihgfedcba
+	  tsrqponmlkjihgfedcba       tsrqponmlkjihgfedcba
+	 utsrqponmlkjihgfedcba      utsrqponmlkjihgfedcba
+	vutsrqponmlkjihgfedcba     vutsrqponmlkjihgfedcba
+   wvutsrqponmlkjihgfedcba    wvutsrqponmlkjihgfedcba
+  xwvutsrqponmlkjihgfedcba   xwvutsrqponmlkjihgfedcba
+ yxwvutsrqponmlkjihgfedcba  yxwvutsrqponmlkjihgfedcba
+zyxwvutsrqponmlkjihgfedcba zyxwvutsrqponmlkjihgfedcba
+ yxwvutsrqponmlkjihgfedcba  yxwvutsrqponmlkjihgfedcba
+  xwvutsrqponmlkjihgfedcba   xwvutsrqponmlkjihgfedcba
+   wvutsrqponmlkjihgfedcba    wvutsrqponmlkjihgfedcba
+	vutsrqponmlkjihgfedcba     vutsrqponmlkjihgfedcba
+	 utsrqponmlkjihgfedcba      utsrqponmlkjihgfedcba
+	  tsrqponmlkjihgfedcba       tsrqponmlkjihgfedcba
+	   srqponmlkjihgfedcba        srqponmlkjihgfedcba
+		rqponmlkjihgfedcba         rqponmlkjihgfedcba
+		 qponmlkjihgfedcba          qponmlkjihgfedcba
+		  ponmlkjihgfedcba           ponmlkjihgfedcba
+		   onmlkjihgfedcba            onmlkjihgfedcba
+			nmlkjihgfedcba             nmlkjihgfedcba
+			 mlkjihgfedcba              mlkjihgfedcba
+			  lkjihgfedcba               lkjihgfedcba
+			   kjihgfedcba                kjihgfedcba
+				jihgfedcba                 jihgfedcba
+				 ihgfedcba                  ihgfedcba
+				  hgfedcba                   hgfedcba
+				   gfedcba                    gfedcba
+					fedcba                     fedcba
+					 edcba                      edcba
+					  dcba                       dcba
+					   cba                        cba
+						ba                         ba
+						 a                          a
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is the end.
