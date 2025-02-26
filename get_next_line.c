@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/22 15:41:20 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/26 11:15:13 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	handle_eof(char **line, char **store)
 	if (*store && **store)
 	{
 		*line = ft_strdup(*store);
-		if (!line)
+		if (!*line)
 			return ;
 		free(*store);
 		*store = NULL;
@@ -75,7 +75,10 @@ void	get_from_store(char **store, char **line)
 		(*line)[len] = '\0';
 		ptr = ft_strdup(*store + len);
 		if (!ptr)
+		{
+			free(*line);
 			return ;
+		}
 		free(*store);
 		*store = ptr;
 	}
@@ -100,6 +103,14 @@ void	get_from_read(int fd, char **line, char **store)
 	}
 	if (*store && ft_strchr(*store, '\n'))
 		get_from_store(store, line);
+	else if (*store)
+	{
+		*line = ft_strdup(*store);
+		if (!*line)
+			return ;
+		free(*store);
+		*store = NULL;
+	}
 }
 
 char	*get_next_line(int fd)
@@ -114,24 +125,25 @@ char	*get_next_line(int fd)
 		get_from_read(fd, &line, &store);
 	else
 		get_from_store(&store, &line);
+/* 	if (!line && store)
+	{
+		free(store);
+		store = NULL;
+	} */
 	return (line);
 }
 
-// int	main(void)
-// {
-// 	int		fd;
-// 	char	*line;
+int	main(void)
+{
+	int		fd;
+	char	*line;
 
-// 	fd = open("sample.txt", O_RDONLY);
-// 	if (fd < 0)
-// 		return (1);
-// 	while ((line = get_next_line(fd)) != NULL)
-// 	{
-// 		printf("%s", line);
-// 		free(line);
-// 	}
-// 	// line = get_next_line(-1);
-// 	// printf("%s", line);
-// 	close(fd);
-// 	return (0);
-// }
+	fd = open("sample.txt", O_RDONLY);
+	while ((line = get_next_line(fd)) != NULL)
+	{
+		printf("%s", line);
+		free(line);
+	}
+	close(fd);
+	return (0);
+}
