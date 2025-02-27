@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:18:42 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/26 11:15:13 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:25:33 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,25 +125,21 @@ char	*get_next_line(int fd)
 		get_from_read(fd, &line, &store);
 	else
 		get_from_store(&store, &line);
-/* 	if (!line && store)
-	{
-		free(store);
-		store = NULL;
-	} */
 	return (line);
 }
 
-int	main(void)
-{
-	int		fd;
-	char	*line;
-
-	fd = open("sample.txt", O_RDONLY);
-	while ((line = get_next_line(fd)) != NULL)
-	{
-		printf("%s", line);
-		free(line);
-	}
-	close(fd);
-	return (0);
-}
+// int	main(void)
+// {
+// 	int		fd;
+// 	char	*line;
+// 	fd = open("sample.txt", O_RDONLY);
+// 	while ((line = get_next_line(fd)) != NULL)
+// 	{
+// 		printf("%s", line);
+// 		free(line);
+// 	}
+// 	/* line = get_next_line(fd);
+// 	printf("%s", line); */
+// 	close(fd);
+// 	return (0);
+// }

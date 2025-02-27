@@ -6,7 +6,7 @@
 /*   By: glugo-mu <glugo-mu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 12:42:49 by glugo-mu          #+#    #+#             */
-/*   Updated: 2025/02/26 11:15:27 by glugo-mu         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:26:40 by glugo-mu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 3
+# endif
+# if BUFFER_SIZE > 1000000
+#  undef BUFFER_SIZE
+#  define BUFFER_SIZE 1000000
 # endif
 
 # include <unistd.h>
